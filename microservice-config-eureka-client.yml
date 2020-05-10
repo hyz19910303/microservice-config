@@ -14,7 +14,7 @@ eureka:
     fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # 单机版 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
-      defaultZone: http://eureka9002:9002/,http://eureka9003:9003/  #集群版
+      defaultZone: http://eureka9002:9002/eureka/,http://eureka9003:9003/eureka/  #集群版
 ---
 server:
   port: 9002
@@ -29,7 +29,7 @@ eureka:
     fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # 单机版 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
-      defaultZone: http://eureka9001:9001/,http://eureka9003:9003/
+      defaultZone: http://eureka9001:9001/eureka/,http://eureka9003:9003/eureka/
 ---
 server:
   port: 9003
@@ -43,7 +43,7 @@ eureka:
     fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # 单机版 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
-      defaultZone: http://eureka9002:9002/,http://eureka9001:9001/
+      defaultZone: http://eureka9002:9002/eureka/,http://eureka9001:9001/eureka/
 
 
 
