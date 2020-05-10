@@ -11,7 +11,7 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka9001:9001/eureka,http://eureka9002:9002/eureka,http://eureka9003:9003/eureka #集群版
+      defaultZone: http://eureka9001:9001,http://eureka9002:9002,http://eureka9003:9003 #集群版
   instance:
     instance-id: microservice-user-6001 #向eureka注册中心注册服务时候 自身的唯一ID
     app-group-name: true
@@ -59,7 +59,7 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka9001:9001/eureka,http://eureka9002:9002/eureka,http://eureka9003:9003/eureka #集群版
+      defaultZone: http://eureka9001:9001,http://eureka9002:9002,http://eureka9003:9003 #集群版
   instance:
     instance-id: microservice-user-6002 #向eureka注册中心注册服务时候 自身的唯一ID
     app-group-name: true
@@ -107,7 +107,7 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka9001:9001/eureka,http://eureka9002:9002/eureka,http://eureka9003:9003/eureka #集群版
+      defaultZone: http://eureka9001:9001,http://eureka9002:9002,http://eureka9003:9003 #集群版
   instance:
     instance-id: microservice-user-6003 #向eureka注册中心注册服务时候 自身的唯一ID
     app-group-name: true
